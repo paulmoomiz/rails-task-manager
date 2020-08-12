@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Tasks</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+  <h1>My Tasks</h1>
+
+  <ul>
+    <% @task.each do |task| %>
+      <li><i class="fas fa-check"></i>
+        <%= link_to task.title, task_path(task) %>
+        <%= link_to "[X]",
+            task_path(@task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+      </li>
+    <% end %>
+
+    <p><%= link_to "Add a new task", new_path %></p>
+  </ul>
+  </div>
+</div>
+</body>
+</html>
+
+

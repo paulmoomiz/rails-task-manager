@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Tasks - Update</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+  <h1>Update Task form</h1>
+  <%= form_for(@task) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+    <%= f.check_box :completed, class: "check_box" %> <%= f.label :completed, class: "check_label" %>
+    <%= f.submit %>
+  <% end %>
+  <p><%= link_to "Back to list", root_path %></p>
+  </div>
+</div>
+</body>
+</html>

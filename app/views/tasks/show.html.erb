@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Task - Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+  <h1><%= @task.title %> </h1>
+  <div><%= @task.details %></div>
+  <p><%= link_to "Back to list", root_path %></p>
+  <%= link_to "Edit task", edit_path , class: "button_edit" %>
+  </div>
+</div>
+</body>
+</html>

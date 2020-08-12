@@ -1,0 +1,75 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.wrapper{
+  width:100%;
+}
+
+.container{
+  width:600px;
+  margin: 20px auto;
+  padding:0px 20px 20px;
+  position:relative;
+  border:solid #eee 1px;
+  box-shadow: 5px 5px 8px #eee;
+}
+
+.button_edit{
+  position:absolute;
+  top:20px;
+  right:10px;
+  font-size:0.8em;
+  border-radius:0.2em;
+  background:#eee;
+  border:#ddd solid 1px;
+  padding:10px;
+  display:block;
+  text-decoration: none;
+}
+
+.button_edit:hover{
+  background:#555;
+  color:#fff;
+}
+
+ul{
+  margin-left:10px;
+  padding:0;
+}
+
+li{
+  list-style:none;
+}
+
+.fa-check{
+  display: inline-block;
+  margin-right:10px;
+}
+
+label{
+  width:400px;
+  margin-bottom:10px;
+  display:block;
+}
+
+input[type="text"]{
+  width:400px;
+  margin-bottom:10px;
+  display:block;
+  padding:12px;
+}
+
+input[type="submit"]{
+  padding:15px 10px;
+  display:block;
+  font-style: 15px;
+  color:#fff;
+  background-color:#337ab7;
+  border:0;
+  border-radius: 0.2em;
+}
+
+.check_box, .check_label{
+  display:inline-block;
+}
